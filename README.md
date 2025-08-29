@@ -14,10 +14,28 @@ O objetivo foi praticar conceitos de desenvolvimento de APIs RESTful utilizando 
 ---
 
 ## 📂 Estrutura do Projeto
-- `Controllers/` → Endpoints da API  
-- `Models/` → Classes de modelo de dados  
-- `Data/` → Contexto do banco de dados (se houver)  
-- `Program.cs` → Configuração inicial da aplicação  
+
+- **Api/** → Projeto principal da API
+  - `Dominio/` → Entidades, DTOs, Enums, Interfaces e Serviços de domínio
+  - `Infraestrutura/` → Configuração e persistência de dados (DbContext, etc.)
+  - `Migrations/` → Migrações do Entity Framework Core
+  - `Properties/` → Configurações do projeto
+  - `Program.cs` → Arquivo principal que inicia a aplicação
+  - `Startup.cs` → Configuração dos serviços, middlewares e rotas
+  - `appsettings.json` → Configurações da aplicação
+  - `appsettings.Development.json` → Configurações específicas do ambiente de desenvolvimento
+  - `minimal-api.csproj` → Arquivo de configuração do projeto
+
+- **Test/** → Projeto de testes automatizados
+  - `Domain/` → Testes relacionados às regras de negócio
+  - `Helpers/` → Classes auxiliares para os testes
+  - `Mocks/` → Objetos mockados para cenários de teste
+  - `Requests/` → Estruturas de requisições usadas nos testes
+  - `Test.csproj` → Arquivo de configuração do projeto de testes
+
+- `.gitignore` → Arquivo para ignorar arquivos/pastas no versionamento  
+- `minimal-api.sln` → Arquivo da solução que agrupa os projetos  
+
 
 ---
 
@@ -25,26 +43,19 @@ O objetivo foi praticar conceitos de desenvolvimento de APIs RESTful utilizando 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
+   
 Acesse a pasta do projeto:
-
-bash
-Copiar código
 cd nome-do-projeto
+
 Restaure as dependências:
-
-bash
-Copiar código
 dotnet restore
+
 Execute a aplicação:
-
-bash
-Copiar código
 dotnet run
-Acesse a documentação no navegador:
 
-bash
-Copiar código
+Acesse a documentação no navegador:
 https://localhost:5001/swagger
+
 📌 Funcionalidades
  CRUD de entidades principais (listar, buscar, criar, atualizar, excluir)
 
@@ -56,18 +67,5 @@ https://localhost:5001/swagger
 Este projeto foi feito para consolidar os aprendizados do curso da DIO, replicando a API proposta e entendendo na prática como estruturar uma aplicação back-end moderna em .NET.
 
 👨‍💻 Autor
-Erick Santos Alves
-LinkedIn | GitHub
-
-markdown
-Copiar código
-
-👉 Quer que eu monte esse README já **formatado** e salvo em `.md` para você baixar, ou prefere que eu só deixe o modelo pronto aqui no chat?
-
-
-
-
-
-
-
-Perguntar ao ChatGPT
+https://github.com/Didox
+Replicado por Erick Santos Alves
