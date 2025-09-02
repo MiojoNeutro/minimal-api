@@ -42,7 +42,7 @@ O objetivo foi praticar conceitos de desenvolvimento de APIs RESTful utilizando 
 ## ⚙️ Como Executar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/MiojoNeutro/minimal-api.git
    
 Acesse a pasta do projeto:
 cd nome-do-projeto
